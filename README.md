@@ -23,6 +23,22 @@ Now it can read everything, but nothing tells it:
 So it reads too much or too little, and the next chat starts blank
 again. That's a context-management problem, not a storage problem.
 
+## Words you'll see
+
+You don't need any of these to start. Level 0 uses none of them.
+
+| Word | Plain English |
+|------|---------------|
+| **Markdown (.md)** | A plain text file. `#` makes a heading, `-` makes a bullet. Opens in any text editor. |
+| **Repo** (repository) | A folder whose every change is remembered. Like a OneDrive folder with full version history. |
+| **GitHub** | A website that stores repos online. Free. |
+| **Template** | A repo you copy to start your own. You get a fresh copy, not a link to this one. |
+| **Commit** | Saving a checkpoint, with a short note saying what changed. |
+| **Push / pull** | Uploading your checkpoints to GitHub, or downloading other people's. |
+| **Diff** | A before-and-after view of what changed in a file. |
+| **Claude Code** | Claude with permission to open, edit and save files in a folder you choose. It's in the Claude desktop app under the **Code** tab (paid plans). |
+| **MCP / connector** | A plug that lets a chat app reach something outside itself, such as your files, your calendar or GitHub. |
+
 ## The idea
 
 - **Every project gets the same seven files.** Any session, human
@@ -99,26 +115,34 @@ A fully filled-in example lives in [`plant-swap/`](./plant-swap/).
 
 ## Get started
 
-1. Click **Use this template** on GitHub. **Make the new repo
-   private**, because it's about to hold your real work.
-2. Fill in [`_global/PROFILE.md`](./_global/PROFILE.md): who you
-   are and how you like to work. Every session reads it.
-3. Read through [`plant-swap/`](./plant-swap/), a fictional
+1. **Pick a setup level** (below). Each guide walks you through
+   everything, including getting a copy of these files.
+2. Look through [`plant-swap/`](./plant-swap/), a fictional
    project, to see what good looks like.
-4. Pick a setup level (below) and follow its guide.
-5. Create your first project with
+3. Fill in [`_global/PROFILE.md`](./_global/PROFILE.md): who you
+   are and how you like to work. Every session reads it.
+4. Create your first project with
    [`_global/prompts/new-project.md`](./_global/prompts/new-project.md).
-6. Delete `plant-swap/` once it's no longer useful.
+5. Delete `plant-swap/` once it's no longer useful.
+
+If you're comfortable with GitHub, use **Use this template** to
+make your copy, and **make it private**, because it will hold your
+real work.
 
 ## Setup levels
 
-Start at level 1. Move up when the copy-paste starts to annoy you.
+The levels differ in one thing: **who saves the notes at "wrap
+up"**. Start wherever you're comfortable. Most people should start
+at level 0 or 1.
 
-| Level | What you get | Needs | Guide |
-|-------|--------------|-------|-------|
-| **1. Chat only** | Chat reads the brain. You commit what it writes. | A chat app with projects, a GitHub account | [docs/level-1-chat.md](./docs/level-1-chat.md) |
-| **2. Chat + agent** | An agent reads and writes the brain directly, and commits. | A coding agent (Claude Code etc.) | [docs/level-2-agent.md](./docs/level-2-agent.md) |
-| **3. Shared write** | Chat writes too, so all three actors are live on one repo. | An MCP connector to the repo | [docs/level-3-shared.md](./docs/level-3-shared.md) |
+| Level | Who saves the notes | Needs | Guide |
+|-------|---------------------|-------|-------|
+| **0. One note** | You replace one STATE note in a chat Project | Claude or ChatGPT with Projects | [docs/level-0-notes.md](./docs/level-0-notes.md) |
+| **1. A folder** | Claude saves all the files itself, in a folder on your computer | Claude desktop app, paid plan | [docs/level-1-folder.md](./docs/level-1-folder.md) |
+| **2. + GitHub** | Claude saves; one click adds history and an online copy | Level 1 + free GitHub account | [docs/level-2-github.md](./docs/level-2-github.md) |
+| **3. Shared write** | Any chat, on any device, saves directly | Level 2 + an MCP connector (developer setup) | [docs/level-3-shared.md](./docs/level-3-shared.md) |
+
+No git knowledge is needed below level 3.
 
 ## The session loop
 

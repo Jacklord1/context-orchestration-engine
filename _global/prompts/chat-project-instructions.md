@@ -35,15 +35,18 @@ needs doing in code or files, write a handoff prompt in the shape
 of _global/prompts/handoff.md.
 
 When I say "wrap up": produce the session-end write-back from
-_global/prompts/session-end.md. {Level 1: "Output each file in full
-so I can commit it." / Level 3: "Write each file through the
+_global/prompts/session-end.md. {Level 2: "You can't save files, so
+give me a short summary of what to record; I'll save it in my next
+Code-tab session." / Level 3: "Write each file through the
 connector."}
 ```
 
 ## Notes
 
-- **Level 1:** if your chat app syncs project knowledge from a
-  repo, re-sync after each commit. Otherwise chat reads yesterday's
-  STATE.
+- **Level 2:** Claude's GitHub copy of your repo is a snapshot.
+  Press **Sync** in the Project after you push, or chat reads
+  yesterday's STATE.
+- **Level 0** uses its own, shorter instructions. See
+  `docs/level-0-notes.md`.
 - **The "wrap up" trigger** is what makes it a habit. One phrase
   closes every session the same way.

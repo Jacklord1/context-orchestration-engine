@@ -8,9 +8,23 @@ in the repo, usually an MCP connector.
 **Setup time:** from 30 minutes (an existing connector) to an
 afternoon (building your own).
 
+**This level is for people comfortable setting up developer
+tools.** Levels 1 and 2 already give you most of the benefit.
+
 This guide describes the pattern, not a specific product. Chat
 apps, connectors and hosting options change fast, so check the
 current docs for whatever you pick.
+
+## What's an MCP connector?
+
+MCP (Model Context Protocol) is a standard plug that lets a chat
+app reach something outside itself, such as your calendar, a
+database, or a folder of files. A **connector** is one of those
+plugs, added in your chat app's settings.
+
+At level 2, chat can only *read* a snapshot of your brain. A
+connector with write access lets chat *save* to it as well, so
+"wrap up" works from any chat, on any device.
 
 ## How it works
 

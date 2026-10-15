@@ -108,6 +108,10 @@ project.
 
 ## Commits
 
+Only if the brain is a git repo (level 2 and up). At levels 0 and 1
+it's a plain folder: save the files and stop. Don't run git unless
+the person asks.
+
 - One logical change per commit.
 - Message format: `<project>: <what changed>`, for example
   `plant-swap: log decision on RSVP form`.
